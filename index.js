@@ -29,7 +29,7 @@ app.post("/data", async (req, res) => {
   res.send(result);
 });
 app.get("/", async (req, res) => {
-  res.send("hello");
+  return res.send("hello");
 });
 
 app.listen(5000, (err) => {
