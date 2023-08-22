@@ -28,9 +28,9 @@ app.post("/data", async (req, res) => {
   const result = await dataSchema.insertMany(data);
   res.send(result);
 });
-app.get("/",(req,res)=>{
-  res.send("hello")
-})
+app.get("/", async (req, res) => {
+  res.send("hello");
+});
 
 app.listen(5000, (err) => {
   console.log("server listening at 5000");
